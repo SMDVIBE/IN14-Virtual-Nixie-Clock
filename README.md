@@ -1,5 +1,11 @@
 # IN-14 Virtual Nixie Clock
 
+## 🕐 Demo
+
+<p align="center">
+  <img src="docs/demo.gif" width="600">
+</p>
+
 A realistic **single-tube IN-14 clock** built with an ESP32-C3 Super Mini and a 170×320 ST7789 display.
 
 The project recreates the look of a Soviet IN-14 nixie tube using custom graphics. The display shows one digit at a time, with the glow of the filament and visible tube structure preserved in the artwork.

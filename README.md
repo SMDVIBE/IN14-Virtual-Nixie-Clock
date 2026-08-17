@@ -30,7 +30,19 @@ The project recreates the look of a Soviet IN-14 nixie tube using custom graphic
 
 ## 🔌 Wiring
 
-![Wiring diagram](hardware/wiring.png)
+The connection overview below is rendered directly by GitHub using Mermaid:
+
+```mermaid
+flowchart LR
+    ESP["ESP32-C3 Super Mini"]
+    TFT["ST7789<br/>170×320"]
+    ENC["EC11<br/>Rotary Encoder"]
+    RTC["DS3231<br/>RTC"]
+
+    ESP -->|"GPIO 4 SCL<br/>GPIO 6 SDA<br/>GPIO 1 RST<br/>GPIO 7 DC<br/>GPIO 10 CS"| TFT
+    ESP -->|"GPIO 2 S1<br/>GPIO 3 S2<br/>GPIO 5 KEY"| ENC
+    ESP -->|"GPIO 8 SDA<br/>GPIO 9 SCL"| RTC
+```
 
 ### ST7789
 

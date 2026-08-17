@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<rect width="1100" height="700" fill="#111"/>
+<style>
+.t{font-family:Arial,sans-serif;fill:#fff}
+.h{font-size:32px;font-weight:bold}
+.s{font-size:22px}
+.box{fill:#1d1d1d;stroke:#aaa;stroke-width:2}
+.line{stroke:#aaa;stroke-width:3}
+</style>
+<text x="550" y="55" text-anchor="middle" class="t h">IN-14 Virtual Nixie Clock — Wiring</text>
+<rect x="60" y="100" width="300" height="500" rx="20" class="box"/>
+<text x="210" y="145" text-anchor="middle" class="t h">ESP32-C3</text>
+<text x="90" y="205" class="t s">GPIO 1  → ST7789 RST</text>
+<text x="90" y="245" class="t s">GPIO 2  → EC11 S1</text>
+<text x="90" y="285" class="t s">GPIO 3  → EC11 S2</text>
+<text x="90" y="325" class="t s">GPIO 4  → ST7789 SCL</text>
+<text x="90" y="365" class="t s">GPIO 5  → EC11 KEY</text>
+<text x="90" y="405" class="t s">GPIO 6  → ST7789 SDA</text>
+<text x="90" y="445" class="t s">GPIO 7  → ST7789 DC</text>
+<text x="90" y="485" class="t s">GPIO 8  → DS3231 SDA</text>
+<text x="90" y="525" class="t s">GPIO 9  → DS3231 SCL</text>
+<text x="90" y="565" class="t s">GPIO 10 → ST7789 CS</text>
+
+<rect x="470" y="100" width="250" height="180" rx="20" class="box"/>
+<text x="595" y="145" text-anchor="middle" class="t h">ST7789</text>
+<text x="495" y="195" class="t s">170 × 320</text>
+<text x="495" y="235" class="t s">VCC → 3.3V</text>
+<text x="495" y="265" class="t s">GND → GND</text>
+
+<rect x="800" y="100" width="240" height="180" rx="20" class="box"/>
+<text x="920" y="145" text-anchor="middle" class="t h">EC11</text>
+<text x="825" y="195" class="t s">S1 → GPIO2</text>
+<text x="825" y="230" class="t s">S2 → GPIO3</text>
+<text x="825" y="265" class="t s">KEY → GPIO5</text>
+
+<rect x="470" y="390" width="250" height="180" rx="20" class="box"/>
+<text x="595" y="435" text-anchor="middle" class="t h">DS3231</text>
+<text x="495" y="485" class="t s">SDA → GPIO8</text>
+<text x="495" y="520" class="t s">SCL → GPIO9</text>
+<text x="495" y="555" class="t s">VCC → 3.3V</text>
+
+<line x1="360" y1="210" x2="470" y2="210" class="line"/>
+<line x1="360" y1="400" x2="470" y2="500" class="line"/>
+<line x1="360" y1="280" x2="800" y2="200" class="line"/>
+</svg>

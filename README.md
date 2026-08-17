@@ -30,7 +30,7 @@ The project recreates the look of a Soviet IN-14 nixie tube using custom graphic
 
 ## 🔌 Wiring
 
-![Wiring diagram](hardware/wiring.svg)
+![Wiring diagram](hardware/wiring.png)
 
 ### ST7789
 
